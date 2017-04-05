@@ -42,8 +42,17 @@ class ViewController: UIViewController {
         let image = UIImage(named: "worldHeritage01")
         imageView.image = image
         
-        // タイマー処理
-        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
+    
+    @IBAction func startAndStop(_ sender: Any) {
+        // タイマースタート（スライドスタート）処理
+        if self.timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+        } else {
+            // タイマー一時停止（スライド一時停止）処理
+            self.timer.invalidate()
+            self.timer = nil
+        }
     }
     
     
