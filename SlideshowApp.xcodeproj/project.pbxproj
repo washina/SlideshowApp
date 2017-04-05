@@ -12,6 +12,11 @@
 		D8E36F9F1E94BE1600243277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E36F9D1E94BE1600243277 /* Main.storyboard */; };
 		D8E36FA11E94BE1600243277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E36FA01E94BE1600243277 /* Assets.xcassets */; };
 		D8E36FA41E94BE1600243277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E36FA21E94BE1600243277 /* LaunchScreen.storyboard */; };
+		D8E36FAC1E94D64500243277 /* worldHeritage01.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E36FAB1E94D64500243277 /* worldHeritage01.png */; };
+		D8E36FAE1E94D64B00243277 /* worldHeritage02.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E36FAD1E94D64B00243277 /* worldHeritage02.png */; };
+		D8E36FB01E94D65000243277 /* worldHeritage03.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E36FAF1E94D65000243277 /* worldHeritage03.png */; };
+		D8E36FB21E94D65800243277 /* worldHeritage04.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E36FB11E94D65800243277 /* worldHeritage04.png */; };
+		D8E36FB41E94D65E00243277 /* worldHeritage05.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E36FB31E94D65E00243277 /* worldHeritage05.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		D8E36FA01E94BE1600243277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E36FA31E94BE1600243277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8E36FA51E94BE1600243277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E36FAB1E94D64500243277 /* worldHeritage01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldHeritage01.png; sourceTree = "<group>"; };
+		D8E36FAD1E94D64B00243277 /* worldHeritage02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldHeritage02.png; sourceTree = "<group>"; };
+		D8E36FAF1E94D65000243277 /* worldHeritage03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldHeritage03.png; sourceTree = "<group>"; };
+		D8E36FB11E94D65800243277 /* worldHeritage04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldHeritage04.png; sourceTree = "<group>"; };
+		D8E36FB31E94D65E00243277 /* worldHeritage05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldHeritage05.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				D8E36FA01E94BE1600243277 /* Assets.xcassets */,
 				D8E36FA21E94BE1600243277 /* LaunchScreen.storyboard */,
 				D8E36FA51E94BE1600243277 /* Info.plist */,
+				D8E36FAB1E94D64500243277 /* worldHeritage01.png */,
+				D8E36FAD1E94D64B00243277 /* worldHeritage02.png */,
+				D8E36FAF1E94D65000243277 /* worldHeritage03.png */,
+				D8E36FB11E94D65800243277 /* worldHeritage04.png */,
+				D8E36FB31E94D65E00243277 /* worldHeritage05.png */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -123,9 +138,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8E36FB21E94D65800243277 /* worldHeritage04.png in Resources */,
+				D8E36FAC1E94D64500243277 /* worldHeritage01.png in Resources */,
 				D8E36FA41E94BE1600243277 /* LaunchScreen.storyboard in Resources */,
+				D8E36FB01E94D65000243277 /* worldHeritage03.png in Resources */,
+				D8E36FB41E94D65E00243277 /* worldHeritage05.png in Resources */,
 				D8E36FA11E94BE1600243277 /* Assets.xcassets in Resources */,
 				D8E36F9F1E94BE1600243277 /* Main.storyboard in Resources */,
+				D8E36FAE1E94D64B00243277 /* worldHeritage02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
