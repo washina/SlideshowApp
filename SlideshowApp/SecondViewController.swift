@@ -9,11 +9,20 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    // 画像の受取プロパティ
+    var getImage = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        if let controller = self.presentingViewController as? ViewController {
+            controller.dispImage()
+        }
     }
 
     override func didReceiveMemoryWarning() {

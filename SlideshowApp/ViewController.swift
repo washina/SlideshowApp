@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var startAndStop: UIButton!
     @IBOutlet weak var appTitle: UILabel!
+    
+    
     // タイマー準備
     var timer: Timer!
     // 画像番号の設定
@@ -55,6 +57,9 @@ class ViewController: UIViewController {
         startAndStop.backgroundColor = UIColorFromRGB(rgbValue: 0x90ee90)
         appTitle.backgroundColor = UIColorFromRGB(rgbValue: 0x87cefa)
         
+        // 再生/停止ボタンに再生を表示しておく
+        startAndStop.setTitle("再生", for: .normal)
+        
         // imageView（表示する画像）、各ボタンのbackground、タイトルを角丸に
         // imageView
         self.imageView.layer.cornerRadius = 30
@@ -73,19 +78,35 @@ class ViewController: UIViewController {
         self.appTitle.layer.masksToBounds = true
         
         // 画像ファイル読み込み、表示
-        let image = UIImage(named: "worldHeritage01")
-        imageView.image = image
+        dispImage()
+    }
+    
+    // タッチされたときの処理
+    @IBAction func tapEvent(_ sender: Any) {
+        func segue() {
+            self.performSegue(withIdentifier: "jump", sender: nil)
+        }
         
+//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            if segue.identifier == "toSecondViewController" {
+//                let secondViewController = segue.destination as! SecondViewController
+//                secondViewController.getImage = sender as! UIImage;
+//            }
+//        }
     }
     
     @IBAction func startAndStop(_ sender: Any) {
         // タイマースタート（スライドスタート）処理
         if self.timer == nil {
             timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+            // 再生ボタンのテキストを停止にする
+            startAndStop.setTitle("停止", for: .normal)
             //　戻る、進むボタンを隠す
             backButton.isHidden = true
             nextButton.isHidden = true
         } else {
+            // テキストを再生に戻す
+            startAndStop.setTitle("再生", for: .normal)
             // タイマー一時停止（スライド一時停止）処理
             self.timer.invalidate()
             self.timer = nil
@@ -127,6 +148,10 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        // 戻る際の処理
     }
 
 
