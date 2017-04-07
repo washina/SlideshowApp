@@ -113,7 +113,7 @@
         <!--Second View Controller-->
         <scene sceneID="rqJ-A7-KPi">
             <objects>
-                <viewController id="m5Q-VK-RTA" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController id="m5Q-VK-RTA" customClass="SecondViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Ps-On-GfG"/>
                         <viewControllerLayoutGuide type="bottom" id="l9S-fI-iwm"/>
@@ -162,7 +162,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="vel-nu-7Lf" id="42B-eB-Jjt"/>
+                        <outlet property="imageView" destination="vel-nu-7Lf" id="D8R-wX-941"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDo-WB-xiM" userLabel="First Responder" sceneMemberID="firstResponder"/>

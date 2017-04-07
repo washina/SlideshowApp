@@ -19,10 +19,9 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        if let controller = self.presentingViewController as? ViewController {
-            controller.dispImage()
-        }
+
+        // 画像の表示
+        imageView.image = getImage
     }
 
     override func didReceiveMemoryWarning() {

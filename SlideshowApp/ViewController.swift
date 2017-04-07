@@ -86,13 +86,14 @@ class ViewController: UIViewController {
         func segue() {
             self.performSegue(withIdentifier: "jump", sender: nil)
         }
-        
-//        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//            if segue.identifier == "toSecondViewController" {
-//                let secondViewController = segue.destination as! SecondViewController
-//                secondViewController.getImage = sender as! UIImage;
-//            }
-//        }
+    }
+    
+    // 画像データをSecondViewControllerに送る
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "jump" {
+            let secondViewController = segue.destination as! SecondViewController
+            secondViewController.getImage = imageView.image!
+        }
     }
     
     @IBAction func startAndStop(_ sender: Any) {
@@ -117,7 +118,6 @@ class ViewController: UIViewController {
     }
     
     func updateTimer(timer: Timer) {
-        
         // 画像切り替えのために画像番号に1を足す
         imageNo += 1
         // 最後に割り当てた画像が表示されたら、画像番号0の画像に戻る
