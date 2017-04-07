@@ -123,10 +123,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vel-nu-7Lf">
-                                <rect key="frame" x="40" y="164" width="240" height="240"/>
+                                <rect key="frame" x="-20" y="104" width="360" height="360"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="v7z-2Z-cmK"/>
-                                    <constraint firstAttribute="height" constant="240" id="yYV-sX-QkJ"/>
+                                    <constraint firstAttribute="width" constant="360" id="v7z-2Z-cmK"/>
+                                    <constraint firstAttribute="height" constant="360" id="yYV-sX-QkJ"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画像拡大画面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYZ-0E-C7i">

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D83F3FA31E978EF0009C005F /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = D83F3FA21E978EF0009C005F /* earth.png */; };
 		D8E36F9A1E94BE1500243277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E36F991E94BE1500243277 /* AppDelegate.swift */; };
 		D8E36F9C1E94BE1500243277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E36F9B1E94BE1500243277 /* ViewController.swift */; };
 		D8E36F9F1E94BE1600243277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E36F9D1E94BE1600243277 /* Main.storyboard */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D83F3FA21E978EF0009C005F /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
 		D8E36F961E94BE1500243277 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E36F991E94BE1500243277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8E36F9B1E94BE1500243277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				D8E36FA01E94BE1600243277 /* Assets.xcassets */,
 				D8E36FA21E94BE1600243277 /* LaunchScreen.storyboard */,
 				D8E36FA51E94BE1600243277 /* Info.plist */,
-				D83F3FA21E978EF0009C005F /* earth.png */,
 				D8E36FAB1E94D64500243277 /* worldHeritage01.png */,
 				D8E36FAD1E94D64B00243277 /* worldHeritage02.png */,
 				D8E36FAF1E94D65000243277 /* worldHeritage03.png */,
@@ -149,7 +146,6 @@
 				D8E36FA41E94BE1600243277 /* LaunchScreen.storyboard in Resources */,
 				D8E36FB01E94D65000243277 /* worldHeritage03.png in Resources */,
 				D8E36FB41E94D65E00243277 /* worldHeritage05.png in Resources */,
-				D83F3FA31E978EF0009C005F /* earth.png in Resources */,
 				D8E36FA11E94BE1600243277 /* Assets.xcassets in Resources */,
 				D8E36F9F1E94BE1600243277 /* Main.storyboard in Resources */,
 				D8E36FAE1E94D64B00243277 /* worldHeritage02.png in Resources */,
