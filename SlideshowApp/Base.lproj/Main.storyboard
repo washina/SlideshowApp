@@ -163,6 +163,8 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="vel-nu-7Lf" id="D8R-wX-941"/>
+                        <outlet property="secondAppTitle" destination="KYZ-0E-C7i" id="lB0-49-90G"/>
+                        <outlet property="secondBackButton" destination="I3l-VO-EJ7" id="e2v-sH-bVx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fDo-WB-xiM" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -81,18 +81,23 @@ class ViewController: UIViewController {
         dispImage()
     }
     
-    // タッチされたときの処理
-    @IBAction func tapEvent(_ sender: Any) {
-        func segue() {
-            self.performSegue(withIdentifier: "jump", sender: nil)
-        }
-    }
     
     // 画像データをSecondViewControllerに送る
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "jump" {
             let secondViewController = segue.destination as! SecondViewController
             secondViewController.getImage = imageView.image!
+            // タイマー一時停止（スライド一時停止）処理
+            if self.timer != nil {
+                self.timer.invalidate()
+                self.timer = nil
+                // テキストを再生に戻す
+                startAndStop.setTitle("再生", for: .normal)
+                // 戻る、進むボタンの再表示
+                backButton.isHidden = false
+                nextButton.isHidden = false
+            }
+            
         }
     }
     
